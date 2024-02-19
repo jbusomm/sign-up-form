@@ -359,6 +359,7 @@ template {
   border: solid lime 4px;
   flex-grow: 1;
   position: relative;
+  margin: 0;
 }
 
 .content {
@@ -370,35 +371,50 @@ template {
   border: solid limegreen 4px;
 } */
 
-.banner-img {
+figure img {
   height: 100%;
   width: 100%;
+  display: block;
   object-fit: cover;
 }
 
 .logo-text {
   display: flex;
   justify-content: center;
+  align-content: center;
 }
 
 .overmission {
-  background-color: rgba(0, 0, 0, 20%);
+  background-color: rgba(0, 0, 0, 45%);
   position: absolute;
-  bottom: 60%;
-  height: auto;
-  max-width: 750px;
-  min-width: 200px;
+  bottom: 65%;
+  width: 100%;
 }
 
 .overmission img {
-  max-width: 20%;
-  max-height: 20%;
+  height: auto;
+  width: 25%;
+  margin: 0px;
+  margin-top: 0px;
 }
 
-.overmission p {
+.ombjj {
   font-family: "Protest Revolution", Arial, Helvetica, sans-serif;
   font-size: 3em;
   color: white;
   text-align: center;
   margin: auto 0;
+}
+
+.photo-credit {
+  color: white;
+  position: relative;
+  margin: 0;
+  padding: 8px;
+  bottom: 30px;
+}
+
+figcaption a {
+  color: rgb(31, 31, 255);
+  text-decoration: none;
 }
