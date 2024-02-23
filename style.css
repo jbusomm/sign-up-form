@@ -22,6 +22,7 @@ html {
 
 body {
   margin: 0;
+  background-color: whitesmoke;
 }
 
 /**
@@ -350,6 +351,8 @@ template {
   display: none;
 }
 
+/* Wrapper div's */
+
 .wrap {
   display: flex;
   align-items: center;
@@ -370,6 +373,8 @@ template {
   display: flex;
   flex-direction: column;
 }
+
+/* Main div's styles */
 
 figure img {
   height: 100%;
@@ -437,13 +442,54 @@ figcaption a {
   flex-grow: 2;
   border: solid 5px brown;
   display: flex;
+  justify-content: flex-start;
+  background-color: white;
 }
 
 fieldset {
   display: flex;
+  width: auto;
+  height: 90%;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .content-submit {
   border: solid 5px aqua;
   flex-grow: 1;
+}
+
+legend {
+  font-family: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.left-side-form > div,
+.right-side-form > div,
+legend {
+  padding: 14px 64px 14px 0;
+}
+
+input,
+label {
+  display: block;
+}
+
+label {
+  margin-bottom: 2px;
+  font-family: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+input {
+  border-style: solid;
+  border: 1px rgb(226, 226, 226) solid;
+  border-radius: 4px;
+  height: 24px;
 }
