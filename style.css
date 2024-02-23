@@ -428,14 +428,19 @@ figcaption a {
   border: 4px solid red;
   width: 800px;
   height: auto;
-  flex-grow: 0.5;
+  flex-grow: 0.3;
   font-size: 1.4rem;
-  margin: 0 auto;
+  line-break: normal;
 }
 
 .content-form {
-  flex-grow: 1;
+  flex-grow: 2;
   border: solid 5px brown;
+  display: flex;
+}
+
+fieldset {
+  display: flex;
 }
 
 .content-submit {
