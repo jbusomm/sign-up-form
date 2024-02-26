@@ -478,6 +478,12 @@ fieldset {
   margin-bottom: 16px;
 }
 
+.content-submit a {
+  color: #5483bb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 legend {
   font-family: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
