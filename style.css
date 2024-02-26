@@ -368,7 +368,7 @@ template {
 .content {
   height: 80vh;
   width: auto;
-  border: solid rgb(255, 251, 0) 4px;
+  /* border: solid rgb(255, 251, 0) 4px; */
   flex-grow: 40;
   display: flex;
   flex-direction: column;
@@ -430,20 +430,25 @@ figcaption a {
 /* Content */
 
 .content-text {
-  border: 4px solid red;
+  /* border: 4px solid red; */
+  font-family: "Roboto", Courier, monospace;
   width: 800px;
   height: auto;
-  flex-grow: 0.3;
+  flex-grow: 0;
   font-size: 1.4rem;
+  font-weight: 500;
   line-break: normal;
+  padding-bottom: 32px;
 }
 
 .content-form {
-  flex-grow: 2;
-  border: solid 5px brown;
+  flex-grow: 0;
+  /* border: solid 5px brown; */
   display: flex;
   justify-content: flex-start;
   background-color: white;
+  padding: 16px;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.09);
 }
 
 fieldset {
@@ -456,8 +461,21 @@ fieldset {
 }
 
 .content-submit {
-  border: solid 5px aqua;
-  flex-grow: 1;
+  /* border: solid 5px aqua; */
+  font-family: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  flex-grow: 0;
+  padding-top: 32px;
+}
+
+.content-submit button {
+  color: white;
+  font-weight: 500;
+  background-color: #5483bb;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 54px 14px 54px;
+  margin-bottom: 16px;
 }
 
 legend {
@@ -492,4 +510,10 @@ input {
   border: 1px rgb(226, 226, 226) solid;
   border-radius: 4px;
   height: 24px;
+}
+
+.content-text,
+.content-form,
+.content-submit {
+  padding-left: 48px;
 }
