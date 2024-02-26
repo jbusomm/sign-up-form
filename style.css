@@ -474,7 +474,7 @@ fieldset {
   background-color: #5483bb;
   border: none;
   border-radius: 8px;
-  padding: 14px 54px 14px 54px;
+  padding: 16px 56px 16px 56px;
   margin-bottom: 16px;
 }
 
@@ -508,7 +508,8 @@ label {
     sans-serif;
   font-weight: 500;
   font-size: 0.8rem;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  color: hsl(0deg 0% 18.27% / 95%);
 }
 
 input {
@@ -517,6 +518,13 @@ input {
   border-radius: 4px;
   height: 28px;
   width: 250px;
+}
+
+input:focus,
+input:active {
+  border: 1px solid rgb(89 184 255 / 72%);
+  box-shadow: 2px 2px 5px 2px rgb(0 0 0 / 17%);
+  outline: none;
 }
 
 .content-text,
