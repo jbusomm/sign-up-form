@@ -518,6 +518,10 @@ input {
   border-radius: 4px;
   height: 28px;
   width: 250px;
+  font-family: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  font-size: 0.9rem;
+  padding-left: 8px;
 }
 
 input:focus,
@@ -525,6 +529,10 @@ input:active {
   border: 1px solid rgb(89 184 255 / 72%);
   box-shadow: 2px 2px 5px 2px rgb(0 0 0 / 17%);
   outline: none;
+}
+
+.error:invalid {
+  border: 1px solid rgba(255, 0, 0, 0.72);
 }
 
 .content-text,
